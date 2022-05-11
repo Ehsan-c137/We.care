@@ -1,0 +1,38 @@
+.subscribe {
+   @include flex-hv-center;
+   background-color: white;
+   padding: 10rem 0rem;
+   // background-color: ;
+   // background: linear-gradient(to bottom, green 50%, white 0%);
+
+   &-container {
+      background-color: #3047d2;
+      @include flex-hv-center;
+      flex-direction: column;
+      gap: 3rem;
+      padding: 5rem;
+      border-radius: 1rem;
+   }
+   &__header {
+      font-size: 3.6rem;
+      color: var(--white-color);
+      width: 70%;
+   }
+
+   &__input-container {
+      background-color: var(--white-color);
+      padding: 1rem 2rem;
+      border-radius: 7px;
+      display: flex;
+      gap: 2rem;
+      input {
+         background-color: transparent;
+         border: none;
+         outline: none;
+      }
+      transition: 0.3s;
+      &:focus-within {
+         box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.661);
+      }
+   }
+}

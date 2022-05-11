@@ -1,0 +1,68 @@
+.feedback {
+   padding-top: 5rem;
+
+   &-container {
+      @include flex-hv-center;
+      flex-direction: column;
+      gap: 2rem;
+   }
+
+   &__header {
+      color: var(--primery-blue-dark);
+      font-size: 3.6rem;
+      &-sub {
+         color: var(--gray-color);
+         width: 50%;
+         font-size: 1.6rem;
+         text-align: center;
+      }
+   }
+
+   &__main {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+      align-items: center;
+      justify-content: center;
+      gap: 7rem;
+
+      &-right {
+         display: flex;
+         flex-direction: column;
+         gap: 2rem;
+
+         &__patient-info {
+            &-con {
+               display: flex;
+               gap: 2rem;
+            }
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+
+            &-name {
+               color: var(--primery-blue-dark);
+               font-weight: 600;
+            }
+            &-city {
+               color: var(--gray-color);
+            }
+         }
+         &__desc {
+            color: var(--gray-color);
+         }
+         &__fill {
+            border-bottom: 1px solid var(--primery-blue-dark);
+            box-shadow: 1px 3px 10px var(--primery-blue-dark);
+         }
+      }
+   }
+
+   &__avatar {
+      width: 10rem;
+      background-color: #46ddbd;
+      border-radius: 7px;
+   }
+   &__star {
+      color: #f8ba4f;
+   }
+}

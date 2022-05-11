@@ -1,0 +1,31 @@
+.header {
+   @include flex-v-center;
+   justify-content: space-between;
+   padding: 2rem 0rem;
+   color: var(--primery-blue-dark);
+   font-weight: bold;
+   &__left {
+      @include flex-v-center;
+      gap: 2rem;
+
+      &__img {
+         width: 12rem;
+         margin-right: 3rem;
+      }
+      ul {
+         @include flex-v-center;
+         gap: 2rem;
+      }
+   }
+
+   &__right {
+      @include flex-hv-center;
+      gap: 2rem;
+   }
+}
+.darkmode-btn {
+   color: white;
+   font-size: 1.6rem;
+   @include flex-hv-center;
+   height: 2.1rem;
+}

@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="./style/index.css" />
+      <link
+         rel="stylesheet"
+         href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+      />
+
+      <script defer src="./JS/popularSearch.js"></script>
+      <script defer src="./JS/index.js"></script>
+      <title>We.Care</title>
+   </head>
+   <body>
+      <header class="header container">
+         <div class="header__left">
+            <a href="./index.html">
+               <img
+                  src="./assets/WeCare-Logo.png"
+                  alt="we care logo"
+                  class="header__left__img"
+               />
+            </a>
+            <ul>
+               <li><a href="#" class="link-animation">Find a Doctor</a></li>
+               <li><a href="#" class="link-animation">Find a Hospital</a></li>
+               <li><a href="#" class="link-animation">Health A to Z</a></li>
+            </ul>
+         </div>
+         <div class="header__right">
+            <a href="#" class="btn btn-second">login</a>
+
+            <a class="header__right__signin btn btn-primery"> Sign in </a>
+
+            <a href="#" class="btn btn-primery"
+               ><ion-icon
+                  name="contrast-outline"
+                  class="darkmode-btn"
+               ></ion-icon
+            ></a>
+         </div>
+      </header>
+
+      <main>
+         <section id="hero" class="hero container">
+            <div class="hero__left">
+               <h2 class="hero__left_header">
+                  Feel better about finding healthcare
+               </h2>
+               <p class="hero__left_desc">
+                  At healthcare, we take the guesswork out of finding the right
+                  doctors, Hospital and care for you and your family
+               </p>
+               <div class="hero__left__btns">
+                  <div class="hero__left__btn">
+                     <ion-icon
+                        name="person-outline"
+                        class="hero__left__btn_icon"
+                     ></ion-icon>
+                     <p>Profils for Every Doctor in America</p>
+                  </div>
+                  <div class="hero__left__btn">
+                     <ion-icon
+                        name="star-outline"
+                        class="hero__left__btn_icon"
+                     ></ion-icon>
+
+                     <p>More Than 10 Million Patient Rating</p>
+                  </div>
+               </div>
+            </div>
+            <div class="hero__right">
+               <img src="./assets/imgs/header-doc-img.png" alt="doctor" />
+            </div>
+         </section>
+         <section class="search-doctor container">
+            <div class="inputs-container">
+               <div class="search-doctor-input">
+                  <label for="input-1"
+                     ><ion-icon name="analytics-outline"></ion-icon
+                  ></label>
+                  <input
+                     type="text"
+                     name="input-1"
+                     placeholder="Search Doctor, Conditions or Procedures"
+                  />
+               </div>
+               <div class="search-doctor-input">
+                  <label for="input-2"
+                     ><ion-icon name="location-outline"></ion-icon
+                  ></label>
+                  <input
+                     type="text"
+                     name="input-2"
+                     placeholder="Set your location"
+                  />
+               </div>
+               <div class="btn btn-primery search-doctor-btn">
+                  <ion-icon
+                     name="search-outline"
+                     class="search-doctor-btn-1"
+                  ></ion-icon>
+               </div>
+            </div>
+            <p class="search-doctor__youmaylook">You may be looking for</p>
+            <div class="search-doctor__sugestion-items-container">
+               <div class="search-doctor__segested-items">
+                  <p>Family Medicine</p>
+                  <ion-icon
+                     name="close-outline"
+                     class="search-doctor__segested-items-close-btn"
+                  ></ion-icon>
+               </div>
+               <div class="search-doctor__segested-items">
+                  <p>Pediatrics</p>
+                  <ion-icon
+                     name="close-outline"
+                     class="search-doctor__segested-items-close-btn"
+                  ></ion-icon>
+               </div>
+               <div class="search-doctor__segested-items">
+                  <p>Top Hospital</p>
+                  <ion-icon
+                     name="close-outline"
+                     class="search-doctor__segested-items-close-btn"
+                  ></ion-icon>
+               </div>
+               <div class="search-doctor__segested-items">
+                  <p>Telehealth</p>
+                  <ion-icon
+                     name="close-outline"
+                     class="search-doctor__segested-items-close-btn"
+                  ></ion-icon>
+               </div>
+               <div class="search-doctor__segested-items">
+                  <p>COVID-19</p>
+                  <ion-icon
+                     name="close-outline"
+                     class="search-doctor__segested-items-close-btn"
+                  ></ion-icon>
+               </div>
+               <div class="search-doctor__segested-items">
+                  <p>HIV</p>
+                  <ion-icon
+                     name="close-outline"
+                     class="search-doctor__segested-items-close-btn"
+                  ></ion-icon>
+               </div>
+               <div class="search-doctor__segested-items">
+                  <p>More items</p>
+               </div>
+            </div>
+         </section>
+
+         <section class="popular">
+            <div class="container popular-container">
+               <h2 class="popular__header">Popular Searches on WeCare</h2>
+               <div class="popular__items-container">
+                  <div class="popular__items">
+                     <p
+                        data-number="1"
+                        class="btn btn-1 btn-active btn-primery"
+                     >
+                        Specialties
+                     </p>
+                     <p data-number="2" class="btn btn-2">Conditions</p>
+                     <p data-number="3" class="btn btn-3">Procedures</p>
+                  </div>
+                  <div class="popular_wrapper"></div>
+                  <div class="swiper">
+                     <div
+                        data-card="1"
+                        class="popular__cards popular__cards-active popular__cards-1 swiper-wrapper"
+                     >
+                        <div class="popular__card swiper-slide">
+                           <img
+                              src="./assets/icon/medicine.png"
+                              alt="general medicine"
+                           />
+                           <p>General Medicine</p>
+                        </div>
+                        <div class="popular__card swiper-slide">
+                           <img
+                              src="./assets/icon/depilation.png"
+                              alt="general medicine"
+                           />
+                           <p>General Medicine</p>
+                        </div>
+                        <div class="popular__card swiper-slide">
+                           <img
+                              src="./assets/icon/lungs.png"
+                              alt="general medicine"
+                           />
+                           <p>General Medicine</p>
+                        </div>
+                        <div class="popular__card swiper-slide">
+                           <img
+                              src="./assets/icon/molar-tooth.png"
+                              alt="general medicine"
+                           />
+                           <p>General Medicine</p>
+                        </div>
+                        <div class="popular__card swiper-slide">
+                           <img
+                              src="./assets/icon/nose.png"
+                              alt="general medicine"
+                           />
+                           <p>General Medicine</p>
+                        </div>
+                        <div class="popular__card swiper-slide">
+                           <img
+                              src="./assets/icon/nose.png"
+                              alt="general medicine"
+                           />
+                           <p>General Medicine</p>
+                        </div>
+                        <div class="popular__card swiper-slide">
+                           <img
+                              src="./assets/icon/nose.png"
+                              alt="general medicine"
+                           />
+                           <p>General Medicine</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!--  -->
+                  <div class="swiper">
+                     <div
+                        data-card="2"
+                        class="popular__cards popular__cards-2 swiper-wrapper hidden"
+                     >
+                        <div class="popular__card swiper-slide">
+                           <img
+                              src="./assets/icon/medicine.png"
+                              alt="general medicine"
+                           />
+                           <p>General Medicine</p>
+                        </div>
+                        <div class="popular__card swiper-slide">
+                           <img
+                              src="./assets/icon/depilation.png"
+                              alt="general medicine"
+                           />
+                           <p>General Medicine</p>
+                        </div>
+                        <div class="popular__card swiper-slide">
+                           <img
+                              src="./assets/icon/lungs.png"
+                              alt="general medicine"
+                           />
+                           <p>General Medicine</p>
+                        </div>
+                        <div class="popular__card swiper-slide">
+                           <img
+                              src="./assets/icon/molar-tooth.png"
+                              alt="general medicine"
+                           />
+                           <p>General Medicine</p>
+                        </div>
+                        <div class="popular__card swiper-slide">
+                           <img
+                              src="./assets/icon/nose.png"
+                              alt="general medicine"
+                           />
+                           <p>General Medicine</p>
+                        </div>
+                        <div class="popular__card swiper-slide">
+                           <img
+                              src="./assets/icon/nose.png"
+                              alt="general medicine"
+                           />
+                           <p>General Medicine</p>
+                        </div>
+                        <div class="popular__card swiper-slide">
+                           <img
+                              src="./assets/icon/nose.png"
+                              alt="general medicine"
+                           />
+                           <p>General Medicine</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!--  -->
+                  <div class="swiper">
+                     <div
+                        data-card="3"
+                        class="popular__cards popular__cards-3 swiper-wrapper hidden"
+                     >
+                        <div class="popular__card swiper-slide">
+                           <img
+                              src="./assets/icon/medicine.png"
+                              alt="general medicine"
+                           />
+                           <p>General Medicine</p>
+                        </div>
+                        <div class="popular__card swiper-slide">
+                           <img
+                              src="./assets/icon/depilation.png"
+                              alt="general medicine"
+                           />
+                           <p>General Medicine</p>
+                        </div>
+                        <div class="popular__card swiper-slide">
+                           <img
+                              src="./assets/icon/lungs.png"
+                              alt="general medicine"
+                           />
+                           <p>General Medicine</p>
+                        </div>
+                        <div class="popular__card swiper-slide">
+                           <img
+                              src="./assets/icon/molar-tooth.png"
+                              alt="general medicine"
+                           />
+                           <p>General Medicine</p>
+                        </div>
+                        <div class="popular__card swiper-slide">
+                           <img
+                              src="./assets/icon/nose.png"
+                              alt="general medicine"
+                           />
+                           <p>General Medicine</p>
+                        </div>
+                        <div class="popular__card swiper-slide">
+                           <img
+                              src="./assets/icon/nose.png"
+                              alt="general medicine"
+                           />
+                           <p>General Medicine</p>
+                        </div>
+                        <div class="popular__card swiper-slide">
+                           <img
+                              src="./assets/icon/nose.png"
+                              alt="general medicine"
+                           />
+                           <p>General Medicine</p>
+                        </div>
+                     </div>
+                  </div>
+                  <!--  -->
+               </div>
+            </div>
+         </section>
+         <!--  -->
+         <section class="find-right">
+            <div class="find-right-container container">
+               <div class="find-right__left">
+                  <h3 class="find-right__header">
+                     Find The right doctor right at your fingertips
+                  </h3>
+                  <p class="find-right__header-sec">
+                     Wecare gives you the tools and information you need to
+                  </p>
+                  <div class="find-right-guide-container">
+                     <!--  -->
+                     <div class="find-right-guide">
+                        <div class="find-right-guide--icon">
+                           <ion-icon
+                              name="search-outline"
+                              class="find-right-guide--icon-c"
+                           ></ion-icon>
+                           <div class="find-right-guide--icon-b"></div>
+                        </div>
+                        <div class="find-right-guide--wrapper">
+                           <h4 class="find-right-guide--wrapper-header">
+                              search nearest Hospital
+                           </h4>
+                           <p class="find-right-guide--wrapper-text">
+                              Find doctors and hospitals based on the factors
+                              that matter most to you.
+                           </p>
+                        </div>
+                     </div>
+                     <!--  -->
+                     <!--  -->
+                     <div class="find-right-guide">
+                        <div class="find-right-guide--icon">
+                           <ion-icon
+                              name="person-outline"
+                              class="find-right-guide--icon-c"
+                           ></ion-icon>
+                           <div class="find-right-guide--icon-b"></div>
+                        </div>
+                        <div class="find-right-guide--wrapper">
+                           <h4 class="find-right-guide--wrapper-header">
+                              Appointment with the best doctors
+                           </h4>
+                           <p class="find-right-guide--wrapper-text">
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Natus sint fugiat id provident. Lorem ipsum
+                              dolor sit amet. Lorem ipsum dolor sit amet.
+                           </p>
+                        </div>
+                     </div>
+                     <!--  -->
+                     <!--  -->
+                     <div class="find-right-guide">
+                        <div class="find-right-guide--icon">
+                           <ion-icon
+                              name="call-outline"
+                              class="find-right-guide--icon-c find-right-guide--icon-c-last"
+                           ></ion-icon>
+                           <div class="find-right-guide--icon-b"></div>
+                        </div>
+                        <div class="find-right-guide--wrapper">
+                           <h4 class="find-right-guide--wrapper-header">
+                              search nearest Hospital
+                           </h4>
+                           <p class="find-right-guide--wrapper-text">
+                              Lorem ipsum dolor sit amet consectetur,
+                              adipisicing elit. Molestiae, nihil?
+                           </p>
+                        </div>
+                     </div>
+                     <!--  -->
+                  </div>
+               </div>
+               <div class="find-right__right">
+                  <img src="./assets/imgs/step-doc-img.png" alt="best doctor" />
+               </div>
+            </div>
+         </section>
+
+         <section class="why-you">
+            <div class="container">
+               <div class="why-you__left">
+                  <img src="./assets/imgs/why-doc-img.png" alt="" />
+               </div>
+               <div class="why-you__right">
+                  <h3 class="why-you__right__header">Why you choose We.care</h3>
+                  <p class="why-you__right__header-sub">
+                     We.care gives you the tools and information you need to
+                  </p>
+
+                  <div class="why-you__right-items">
+                     <div class="why-you__right-item">
+                        <ion-icon
+                           name="checkmark-circle-sharp"
+                           class="why-you__right-item-icon"
+                        ></ion-icon>
+                        <p>24/7 access - reach out whenever you need.</p>
+                     </div>
+                     <div class="why-you__right-item">
+                        <ion-icon
+                           name="checkmark-circle-sharp"
+                           class="why-you__right-item-icon"
+                        ></ion-icon>
+                        <p>Lorem ipsum dolor sit amet consectetur,</p>
+                     </div>
+                     <div class="why-you__right-item">
+                        <ion-icon
+                           name="checkmark-circle-sharp"
+                           class="why-you__right-item-icon"
+                        ></ion-icon>
+                        <p>Lorem, ipsum dolor consectetur adipisicing elit.</p>
+                     </div>
+                     <div class="why-you__right-item">
+                        <ion-icon
+                           name="checkmark-circle-sharp"
+                           class="why-you__right-item-icon"
+                        ></ion-icon>
+                        <p>
+                           Lorem dolor sit consectetur adipisicing Labore, unde!
+                        </p>
+                     </div>
+                     <div class="why-you__right-item">
+                        <ion-icon
+                           name="checkmark-circle-sharp"
+                           class="why-you__right-item-icon"
+                        ></ion-icon>
+                        <p>elit. Temporibus, mollitia animi. Vero, velit.</p>
+                     </div>
+                  </div>
+                  <div>
+                     <button class="btn btn-primery">
+                        Get free Subscription
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="meet">
+            <div class="container meet-container">
+               <h3 class="meet__header">Meet out Specialties</h3>
+               <p class="meet__header-sub">
+                  We.care gives you the tools and information you need to
+               </p>
+               <div class="meet__doctors-container">
+                  <div class="meet__doctors">
+                     <div class="meet__doctors-img">
+                        <img
+                           src="./assets/imgs/docs/doc-2.png"
+                           alt="Dr.Leslie Alexander"
+                        />
+                     </div>
+                     <div class="meet__doctors-texts">
+                        <p class="meet__doctors-name">Dr.Leslie Alexande</p>
+                        <p class="meet__doctors-spec">Dental Surgery</p>
+                     </div>
+                  </div>
+                  <div class="meet__doctors">
+                     <div class="meet__doctors-img">
+                        <img
+                           src="./assets/imgs/docs/doc-3.png"
+                           alt="Dr.Leslie Alexander"
+                        />
+                     </div>
+                     <div class="meet__doctors-texts">
+                        <p class="meet__doctors-name">Dr.Leslie Alexande</p>
+                        <p class="meet__doctors-spec">Dental Surgery</p>
+                     </div>
+                  </div>
+                  <div class="meet__doctors">
+                     <div class="meet__doctors-img">
+                        <img
+                           src="./assets/imgs/docs/doc-4.png"
+                           alt="Dr.Leslie Alexander"
+                        />
+                     </div>
+                     <div class="meet__doctors-texts">
+                        <p class="meet__doctors-name">Dr.Leslie Alexande</p>
+                        <p class="meet__doctors-spec">Dental Surgery</p>
+                     </div>
+                  </div>
+                  <div class="meet__doctors">
+                     <div class="meet__doctors-img">
+                        <img
+                           src="./assets/imgs/docs/doc-5.png"
+                           alt="Dr.Leslie Alexander"
+                        />
+                     </div>
+                     <div class="meet__doctors-texts">
+                        <p class="meet__doctors-name">Dr.Leslie Alexande</p>
+                        <p class="meet__doctors-spec">Dental Surgery</p>
+                     </div>
+                  </div>
+                  <div class="meet__doctors">
+                     <div class="meet__doctors-img">
+                        <img
+                           src="./assets/imgs/docs/doc-6.png"
+                           alt="Dr.Leslie Alexander"
+                        />
+                     </div>
+                     <div class="meet__doctors-texts">
+                        <p class="meet__doctors-name">Dr.Leslie Alexande</p>
+                        <p class="meet__doctors-spec">Dental Surgery</p>
+                     </div>
+                  </div>
+                  <div class="meet__doctors">
+                     <div class="meet__doctors-img">
+                        <img
+                           src="./assets/imgs/docs/doc-7.png"
+                           alt="Dr.Leslie Alexander"
+                        />
+                     </div>
+                     <div class="meet__doctors-texts">
+                        <p class="meet__doctors-name">Dr.Leslie Alexande</p>
+                        <p class="meet__doctors-spec">Dental Surgery</p>
+                     </div>
+                  </div>
+                  <div class="meet__doctors">
+                     <div class="meet__doctors-img">
+                        <img
+                           src="./assets/imgs/docs/doc-2.png"
+                           alt="Dr.Leslie Alexander"
+                        />
+                     </div>
+                     <div class="meet__doctors-texts">
+                        <p class="meet__doctors-name">Dr.Leslie Alexande</p>
+                        <p class="meet__doctors-spec">Dental Surgery</p>
+                     </div>
+                  </div>
+                  <div class="meet__doctors">
+                     <div class="meet__doctors-img">
+                        <img
+                           src="./assets/imgs/docs/doc-2.png"
+                           alt="Dr.Leslie Alexander"
+                        />
+                     </div>
+                     <div class="meet__doctors-texts">
+                        <p class="meet__doctors-name">Dr.Leslie Alexande</p>
+                        <p class="meet__doctors-spec">Dental Surgery</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="feedback">
+            <div class="container feedback-container">
+               <h3 class="feedback__header">Our patients feedback about us</h3>
+               <p class="feedback__header-sub">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+                  voluptatem impedit atque neque labore quam asperiores quae
+                  inventore voluptatum similique.
+               </p>
+               <div class="feedback__main">
+                  <div class="feedback__main-left">
+                     <img
+                        src="./assets/imgs/feedback-doc-img.png"
+                        alt="patient"
+                     />
+                  </div>
+                  <div class="feedback__main-right">
+                     <div class="feedback__main-right__patient-info-con">
+                        <img
+                           class="feedback__avatar"
+                           src="./assets/imgs/feedback-slide-1.png"
+                           alt="patient avatar"
+                        />
+                        <div class="feedback__main-right__patient-info">
+                           <p class="feedback__main-right__patient-info-name">
+                              Brooklyn Jacob
+                           </p>
+                           <p class="feedback__main-right__patient-info-city">
+                              Singapore, Singapore
+                           </p>
+                           <div>
+                              <ion-icon
+                                 name="star"
+                                 class="feedback__star"
+                              ></ion-icon>
+                              <ion-icon
+                                 name="star"
+                                 class="feedback__star"
+                              ></ion-icon>
+                              <ion-icon
+                                 name="star"
+                                 class="feedback__star"
+                              ></ion-icon>
+                              <ion-icon
+                                 name="star"
+                                 class="feedback__star"
+                              ></ion-icon>
+                              <ion-icon
+                                 name="star"
+                                 class="feedback__star"
+                              ></ion-icon>
+                           </div>
+                        </div>
+                     </div>
+                     <p class="feedback__main-right__desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sequi qui recusandae eius quam incidunt, ipsum ratione
+                        atque placeat sit quia?
+                     </p>
+                     <div class="feedback__main-right__fill"></div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="subscribe">
+            <div class="subscribe-container">
+               <h3 class="subscribe__header">
+                  Subscribe for any news update from wecare
+               </h3>
+               <form action="#" class="subscribe__input-container">
+                  <input type="text" placeholder="Enter your email address" />
+                  <button class="btn btn-primery">Subscribe</button>
+               </form>
+            </div>
+         </section>
+      </main>
+
+      <script
+         type="module"
+         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+         nomodule
+         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+      <script src="./JS/swiper.js"></script>
+   </body>
+   <footer class="footer container">
+      <div class="footer_logos-con">
+         <div class="footer_logos-img">
+            <img src="./assets/WeCare-Logo.png" alt="we care logo" />
+         </div>
+         <div class="footer_logos-wrapper">
+            <ion-icon
+               name="logo-facebook"
+               class="footer-social-icon"
+            ></ion-icon>
+            <ion-icon name="logo-twitter" class="footer-social-icon"></ion-icon>
+            <ion-icon
+               name="logo-linkedin"
+               class="footer-social-icon"
+            ></ion-icon>
+            <ion-icon name="logo-skype" class="footer-social-icon"></ion-icon>
+            <ion-icon name="logo-youtube" class="footer-social-icon"></ion-icon>
+            <ion-icon
+               name="logo-instagram"
+               class="footer-social-icon"
+            ></ion-icon>
+         </div>
+      </div>
+      <div class="footer__links">
+         <p class="footer__link-header">For Patients</p>
+         <div class="footer__link">
+            <a href="#">Account Sign Up/Log in</a>
+            <a href="#">Hospital Awards & Rating</a>
+            <a href="#">Quality & Quantity</a>
+            <a href="#">FAQ</a>
+         </div>
+      </div>
+      <div class="footer__links">
+         <p class="footer__link-header">For Patients</p>
+         <div class="footer__link">
+            <a href="#">Account Sign Up/Log in</a>
+            <a href="#">Hospital Awards & Rating</a>
+            <a href="#">Quality & Quantity</a>
+            <a href="#">FAQ</a>
+         </div>
+      </div>
+      <div class="footer__links">
+         <p class="footer__link-header">For Patients</p>
+         <div class="footer__link">
+            <a href="#">Account Sign Up/Log in</a>
+            <a href="#">Hospital Awards & Rating</a>
+            <a href="#">Quality & Quantity</a>
+            <a href="#">FAQ</a>
+         </div>
+      </div>
+      <div class="footer__links">
+         <p class="footer__link-header">For Patients</p>
+         <div class="footer__link">
+            <a href="#">Account Sign Up/Log in</a>
+            <a href="#">Hospital Awards & Rating</a>
+            <a href="#">Quality & Quantity</a>
+            <a href="#">FAQ</a>
+         </div>
+      </div>
+   </footer>
+</html>

@@ -1,0 +1,31 @@
+.link-animation {
+   position: relative;
+   transition: color 0.3s ease-in-out;
+   &:hover {
+      color: var(--white-color) !important;
+   }
+}
+.link-animation::before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   width: 110%;
+   height: 100%;
+   padding: 5px;
+   border-radius: 4px;
+   background-color: var(--primery-blue-dark);
+
+   bottom: 0px;
+   left: -5%;
+   transform-origin: right;
+   transform: scaleX(0);
+   transition: transform 0.3s ease-in-out;
+}
+
+.link-animation:hover::before {
+   transform-origin: left;
+   transform: scaleX(1);
+}
+.link-animation:active::before {
+   background-color: var(--primery-blue);
+}

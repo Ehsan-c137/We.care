@@ -1,0 +1,52 @@
+.why-you {
+   & > .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
+      gap: 5rem;
+      align-items: center;
+      justify-items: center;
+   }
+   background-color: var(--header-gradient-color-3);
+   padding-top: 5rem;
+
+   &__left {
+      img {
+         width: 40rem;
+         max-width: 60rem;
+      }
+   }
+   &__right {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+
+      &__header {
+         font-size: 3.6rem;
+         color: var(--primery-blue-dark);
+         &-sub {
+            font-size: 1.8rem;
+            color: var(--gray-color);
+         }
+      }
+
+      &-items {
+         display: flex;
+         flex-direction: column;
+         gap: 1rem;
+      }
+      &-item {
+         @include flex-v-center;
+         gap: 2rem;
+
+         &-icon {
+            color: var(--primery-blue);
+            font-size: 2.4rem;
+            font-weight: 500;
+         }
+         & > p {
+            max-width: 40rem;
+            color: var(--primery-blue-dark);
+         }
+      }
+   }
+}

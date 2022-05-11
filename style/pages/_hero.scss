@@ -1,0 +1,50 @@
+.hero {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: center;
+   justify-content: center;
+
+   &__left {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      &_header {
+         font-size: 6.2rem;
+         width: 90%;
+         color: var(--primery-blue-dark);
+         line-height: 1.3;
+      }
+      &_desc {
+         font-size: 1.6rem;
+         width: 60%;
+         color: var(--gray-color);
+      }
+
+      &__btns {
+         display: flex;
+         gap: 2rem;
+      }
+      &__btn {
+         @include flex-hv-center;
+         gap: 2rem;
+         background-color: var(--primery-blue-dark);
+         color: var(--white-color);
+         padding: 1rem 2rem;
+         border-radius: 9px;
+         &_icon {
+            font-size: 2rem;
+            color: gold;
+         }
+         p {
+            width: 15rem;
+            font-size: 1.4rem;
+         }
+      }
+   }
+
+   &__right {
+      img {
+         width: 90rem;
+      }
+   }
+}

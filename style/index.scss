@@ -1,0 +1,27 @@
+// utils
+@import "./utils/_colors.scss", "./utils/mixin", "./utils/helpers";
+
+// base
+@import "./base/_reset", "./base/_typography", "./base/animation";
+
+// layout
+@import "./layout/_header", "./layout/_searchDoctor", "./layout/footer";
+
+// components
+@import "./components/buttons";
+
+// pages
+@import "./pages/hero", "./pages/_popular", "./pages/_findright",
+   "./pages/_whyyou", "./pages/_meet", "./pages/_feedback", "./pages/subsribe";
+
+.hero {
+   position: relative;
+}
+.search-doctor {
+   position: absolute;
+   bottom: -2rem;
+   right: 0;
+   left: 0;
+}
+
+// TODO add loading page befor loadDom
