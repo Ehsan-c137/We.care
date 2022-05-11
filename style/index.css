@@ -842,6 +842,7 @@ template {
   cursor: pointer;
   -webkit-transition: 0.3s color;
   transition: 0.3s color;
+  color: var(--primery-blue-dark);
 }
 
 .footer-social-icon[name^="logo-skype"]:hover {

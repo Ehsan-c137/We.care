@@ -59,7 +59,7 @@
 .footer-social-icon {
    cursor: pointer;
    transition: 0.3s color;
-
+   color: var(--primery-blue-dark);
    &[name^="logo-skype"] {
       &:hover {
          color: #0097d8;
