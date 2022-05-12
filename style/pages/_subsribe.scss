@@ -25,6 +25,10 @@
       border-radius: 7px;
       display: flex;
       gap: 2rem;
+      border: 1px solid transparent;
+      box-shadow: inset 0px 0px 15px #03061ca4;
+      border-color: rgba(0, 0, 0, 0.427);
+      transition: 0.3s all;
       input {
          background-color: transparent;
          border: none;
@@ -32,7 +36,8 @@
       }
       transition: 0.3s;
       &:focus-within {
-         box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.661);
+         box-shadow: inset 0px 0px 0px transparent,
+            0px 0px 20px rgba(0, 0, 0, 0.661);
       }
    }
 }
