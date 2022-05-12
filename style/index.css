@@ -969,8 +969,12 @@ template {
   font-size: 1.4rem;
 }
 
+.hero__right {
+  width: 65rem;
+}
+
 .hero__right img {
-  width: 92rem;
+  width: 100%;
 }
 
 .popular {
@@ -1058,6 +1062,8 @@ template {
 .popular__card:hover {
   background-color: var(--header-gradient-color-1);
   border: 1px solid var(--input-placeholder-color);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .popular__card img {
@@ -1530,6 +1536,8 @@ template {
 }
 
 .subscribe-container {
+  -webkit-box-shadow: 0px 0px 30px #1927768d;
+          box-shadow: 0px 0px 30px #1927768d;
   background-color: #3047d2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1563,6 +1571,12 @@ template {
   display: -ms-flexbox;
   display: flex;
   gap: 2rem;
+  border: 1px solid transparent;
+  -webkit-box-shadow: inset 0px 0px 15px #03061ca4;
+          box-shadow: inset 0px 0px 15px #03061ca4;
+  border-color: rgba(0, 0, 0, 0.427);
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -1574,8 +1588,8 @@ template {
 }
 
 .subscribe__input-container:focus-within {
-  -webkit-box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.661);
-          box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.661);
+  -webkit-box-shadow: inset 0px 0px 0px transparent, 0px 0px 20px rgba(0, 0, 0, 0.661);
+          box-shadow: inset 0px 0px 0px transparent, 0px 0px 20px rgba(0, 0, 0, 0.661);
 }
 
 .hero {
