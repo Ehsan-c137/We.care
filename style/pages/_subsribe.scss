@@ -2,10 +2,9 @@
    @include flex-hv-center;
    background-color: white;
    padding: 10rem 0rem;
-   // background-color: ;
-   // background: linear-gradient(to bottom, green 50%, white 0%);
 
    &-container {
+      box-shadow: 0px 0px 30px #1927768d;
       background-color: #3047d2;
       @include flex-hv-center;
       flex-direction: column;
