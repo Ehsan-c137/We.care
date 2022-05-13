@@ -1,8 +1,10 @@
 .footer {
+   &-container {
+      background-color: var(--header-gradient-color-1);
+   }
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(23rem, 1fr));
    padding: 5rem 0rem;
-
    &_logos {
       &-con {
          display: flex;

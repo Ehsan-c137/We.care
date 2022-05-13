@@ -20,142 +20,150 @@
       <title>We.Care</title>
    </head>
    <body>
-      <header class="header container">
-         <div class="header__left">
-            <a href="./index.html">
-               <img
-                  src="./assets/WeCare-Logo.png"
-                  alt="we care logo"
-                  class="header__left__img"
-               />
-            </a>
-            <ul>
-               <li><a href="#" class="link-animation">Find a Doctor</a></li>
-               <li><a href="#" class="link-animation">Find a Hospital</a></li>
-               <li><a href="#" class="link-animation">Health A to Z</a></li>
-            </ul>
-         </div>
-         <div class="header__right">
-            <a href="#" class="btn btn-second">login</a>
+      <header class="header-container">
+         <div class="header container">
+            <div class="header__left">
+               <a href="./index.html">
+                  <img
+                     src="./assets/WeCare-Logo.png"
+                     alt="we care logo"
+                     class="header__left__img"
+                  />
+               </a>
+               <ul>
+                  <li><a href="#" class="link-animation">Find a Doctor</a></li>
+                  <li>
+                     <a href="#" class="link-animation">Find a Hospital</a>
+                  </li>
+                  <li><a href="#" class="link-animation">Health A to Z</a></li>
+               </ul>
+            </div>
+            <div class="header__right">
+               <a href="#" class="btn btn-second">login</a>
 
-            <a class="header__right__signin btn btn-primery"> Sign in </a>
+               <a class="header__right__signin btn btn-primery"> Sign in </a>
 
-            <a href="#" class="btn btn-primery"
-               ><ion-icon
-                  name="contrast-outline"
-                  class="darkmode-btn"
-               ></ion-icon
-            ></a>
+               <a href="#" class="btn btn-primery"
+                  ><ion-icon
+                     name="contrast-outline"
+                     class="darkmode-btn"
+                  ></ion-icon
+               ></a>
+            </div>
          </div>
       </header>
 
       <main>
-         <section id="hero" class="hero container">
-            <div class="hero__left">
-               <h2 class="hero__left_header">
-                  Feel better about finding healthcare
-               </h2>
-               <p class="hero__left_desc">
-                  At healthcare, we take the guesswork out of finding the right
-                  doctors, Hospital and care for you and your family
-               </p>
-               <div class="hero__left__btns">
-                  <div class="hero__left__btn">
-                     <ion-icon
-                        name="person-outline"
-                        class="hero__left__btn_icon"
-                     ></ion-icon>
-                     <p>Profils for Every Doctor in America</p>
-                  </div>
-                  <div class="hero__left__btn">
-                     <ion-icon
-                        name="star-outline"
-                        class="hero__left__btn_icon"
-                     ></ion-icon>
+         <section id="hero" class="hero-container">
+            <div class="container hero">
+               <div class="hero__left">
+                  <h2 class="hero__left_header">
+                     Feel better about finding healthcare
+                  </h2>
+                  <p class="hero__left_desc">
+                     At healthcare, we take the guesswork out of finding the
+                     right doctors, Hospital and care for you and your family
+                  </p>
+                  <div class="hero__left__btns">
+                     <div class="hero__left__btn">
+                        <ion-icon
+                           name="person-outline"
+                           class="hero__left__btn_icon"
+                        ></ion-icon>
+                        <p>Profils for Every Doctor in America</p>
+                     </div>
+                     <div class="hero__left__btn">
+                        <ion-icon
+                           name="star-outline"
+                           class="hero__left__btn_icon"
+                        ></ion-icon>
 
-                     <p>More Than 10 Million Patient Rating</p>
+                        <p>More Than 10 Million Patient Rating</p>
+                     </div>
                   </div>
                </div>
-            </div>
-            <div class="hero__right">
-               <img src="./assets/imgs/header-doc-img.png" alt="doctor" />
+               <div class="hero__right">
+                  <img src="./assets/imgs/header-doc-img.png" alt="doctor" />
+               </div>
             </div>
          </section>
-         <section class="search-doctor container">
-            <div class="inputs-container">
-               <div class="search-doctor-input">
-                  <label for="input-1"
-                     ><ion-icon name="analytics-outline"></ion-icon
-                  ></label>
-                  <input
-                     type="text"
-                     name="input-1"
-                     placeholder="Search Doctor, Conditions or Procedures"
-                  />
+         <section class="search-doctor-container">
+            <div class="search-doctor container">
+               <div class="inputs-container">
+                  <div class="search-doctor-input">
+                     <label for="input-1"
+                        ><ion-icon name="analytics-outline"></ion-icon
+                     ></label>
+                     <input
+                        type="text"
+                        name="input-1"
+                        placeholder="Search Doctor, Conditions or Procedures"
+                     />
+                  </div>
+                  <div class="search-doctor-input">
+                     <label for="input-2"
+                        ><ion-icon name="location-outline"></ion-icon
+                     ></label>
+                     <input
+                        type="text"
+                        name="input-2"
+                        placeholder="Set your location"
+                     />
+                  </div>
+                  <div class="btn btn-primery search-doctor-btn">
+                     <ion-icon
+                        name="search-outline"
+                        class="search-doctor-btn-1"
+                     ></ion-icon>
+                  </div>
                </div>
-               <div class="search-doctor-input">
-                  <label for="input-2"
-                     ><ion-icon name="location-outline"></ion-icon
-                  ></label>
-                  <input
-                     type="text"
-                     name="input-2"
-                     placeholder="Set your location"
-                  />
-               </div>
-               <div class="btn btn-primery search-doctor-btn">
-                  <ion-icon
-                     name="search-outline"
-                     class="search-doctor-btn-1"
-                  ></ion-icon>
-               </div>
-            </div>
-            <p class="search-doctor__youmaylook">You may be looking for</p>
-            <div class="search-doctor__sugestion-items-container">
-               <div class="search-doctor__segested-items">
-                  <p>Family Medicine</p>
-                  <ion-icon
-                     name="close-outline"
-                     class="search-doctor__segested-items-close-btn"
-                  ></ion-icon>
-               </div>
-               <div class="search-doctor__segested-items">
-                  <p>Pediatrics</p>
-                  <ion-icon
-                     name="close-outline"
-                     class="search-doctor__segested-items-close-btn"
-                  ></ion-icon>
-               </div>
-               <div class="search-doctor__segested-items">
-                  <p>Top Hospital</p>
-                  <ion-icon
-                     name="close-outline"
-                     class="search-doctor__segested-items-close-btn"
-                  ></ion-icon>
-               </div>
-               <div class="search-doctor__segested-items">
-                  <p>Telehealth</p>
-                  <ion-icon
-                     name="close-outline"
-                     class="search-doctor__segested-items-close-btn"
-                  ></ion-icon>
-               </div>
-               <div class="search-doctor__segested-items">
-                  <p>COVID-19</p>
-                  <ion-icon
-                     name="close-outline"
-                     class="search-doctor__segested-items-close-btn"
-                  ></ion-icon>
-               </div>
-               <div class="search-doctor__segested-items">
-                  <p>HIV</p>
-                  <ion-icon
-                     name="close-outline"
-                     class="search-doctor__segested-items-close-btn"
-                  ></ion-icon>
-               </div>
-               <div class="search-doctor__segested-items">
-                  <p>More items</p>
+               <p class="search-doctor__youmaylook">You may be looking for</p>
+               <div class="search-doctor__sugestion-items-container">
+                  <div class="search-doctor__segested-items">
+                     <p>Family Medicine</p>
+                     <ion-icon
+                        name="close-outline"
+                        class="search-doctor__segested-items-close-btn"
+                     ></ion-icon>
+                  </div>
+                  <div class="search-doctor__segested-items">
+                     <p>Pediatrics</p>
+                     <ion-icon
+                        name="close-outline"
+                        class="search-doctor__segested-items-close-btn"
+                     ></ion-icon>
+                  </div>
+                  <div class="search-doctor__segested-items">
+                     <p>Top Hospital</p>
+                     <ion-icon
+                        name="close-outline"
+                        class="search-doctor__segested-items-close-btn"
+                     ></ion-icon>
+                  </div>
+                  <div class="search-doctor__segested-items">
+                     <p>Telehealth</p>
+                     <ion-icon
+                        name="close-outline"
+                        class="search-doctor__segested-items-close-btn"
+                     ></ion-icon>
+                  </div>
+                  <div class="search-doctor__segested-items">
+                     <p>COVID-19</p>
+                     <ion-icon
+                        name="close-outline"
+                        class="search-doctor__segested-items-close-btn"
+                     ></ion-icon>
+                  </div>
+                  <div class="search-doctor__segested-items">
+                     <p>HIV</p>
+                     <ion-icon
+                        name="close-outline"
+                        class="search-doctor__segested-items-close-btn"
+                     ></ion-icon>
+                  </div>
+                  <div class="search-doctor__segested-items">
+                     <p>More items</p>
+                  </div>
                </div>
             </div>
          </section>
@@ -712,63 +720,74 @@
       <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
       <script src="./JS/swiper.js"></script>
    </body>
-   <footer class="footer container">
-      <div class="footer_logos-con">
-         <div class="footer_logos-img">
-            <img src="./assets/WeCare-Logo.png" alt="we care logo" />
+   <footer class="footer-container">
+      <div class="footer container">
+         <div class="footer_logos-con">
+            <div class="footer_logos-img">
+               <img src="./assets/WeCare-Logo.png" alt="we care logo" />
+            </div>
+            <div class="footer_logos-wrapper">
+               <ion-icon
+                  name="logo-facebook"
+                  class="footer-social-icon"
+               ></ion-icon>
+               <ion-icon
+                  name="logo-twitter"
+                  class="footer-social-icon"
+               ></ion-icon>
+               <ion-icon
+                  name="logo-linkedin"
+                  class="footer-social-icon"
+               ></ion-icon>
+               <ion-icon
+                  name="logo-skype"
+                  class="footer-social-icon"
+               ></ion-icon>
+               <ion-icon
+                  name="logo-youtube"
+                  class="footer-social-icon"
+               ></ion-icon>
+               <ion-icon
+                  name="logo-instagram"
+                  class="footer-social-icon"
+               ></ion-icon>
+            </div>
          </div>
-         <div class="footer_logos-wrapper">
-            <ion-icon
-               name="logo-facebook"
-               class="footer-social-icon"
-            ></ion-icon>
-            <ion-icon name="logo-twitter" class="footer-social-icon"></ion-icon>
-            <ion-icon
-               name="logo-linkedin"
-               class="footer-social-icon"
-            ></ion-icon>
-            <ion-icon name="logo-skype" class="footer-social-icon"></ion-icon>
-            <ion-icon name="logo-youtube" class="footer-social-icon"></ion-icon>
-            <ion-icon
-               name="logo-instagram"
-               class="footer-social-icon"
-            ></ion-icon>
+         <div class="footer__links">
+            <p class="footer__link-header">For Patients</p>
+            <div class="footer__link">
+               <a href="#">Account Sign Up/Log in</a>
+               <a href="#">Hospital Awards & Rating</a>
+               <a href="#">Quality & Quantity</a>
+               <a href="#">FAQ</a>
+            </div>
          </div>
-      </div>
-      <div class="footer__links">
-         <p class="footer__link-header">For Patients</p>
-         <div class="footer__link">
-            <a href="#">Account Sign Up/Log in</a>
-            <a href="#">Hospital Awards & Rating</a>
-            <a href="#">Quality & Quantity</a>
-            <a href="#">FAQ</a>
+         <div class="footer__links">
+            <p class="footer__link-header">For Patients</p>
+            <div class="footer__link">
+               <a href="#">Account Sign Up/Log in</a>
+               <a href="#">Hospital Awards & Rating</a>
+               <a href="#">Quality & Quantity</a>
+               <a href="#">FAQ</a>
+            </div>
          </div>
-      </div>
-      <div class="footer__links">
-         <p class="footer__link-header">For Patients</p>
-         <div class="footer__link">
-            <a href="#">Account Sign Up/Log in</a>
-            <a href="#">Hospital Awards & Rating</a>
-            <a href="#">Quality & Quantity</a>
-            <a href="#">FAQ</a>
+         <div class="footer__links">
+            <p class="footer__link-header">For Patients</p>
+            <div class="footer__link">
+               <a href="#">Account Sign Up/Log in</a>
+               <a href="#">Hospital Awards & Rating</a>
+               <a href="#">Quality & Quantity</a>
+               <a href="#">FAQ</a>
+            </div>
          </div>
-      </div>
-      <div class="footer__links">
-         <p class="footer__link-header">For Patients</p>
-         <div class="footer__link">
-            <a href="#">Account Sign Up/Log in</a>
-            <a href="#">Hospital Awards & Rating</a>
-            <a href="#">Quality & Quantity</a>
-            <a href="#">FAQ</a>
-         </div>
-      </div>
-      <div class="footer__links">
-         <p class="footer__link-header">For Patients</p>
-         <div class="footer__link">
-            <a href="#">Account Sign Up/Log in</a>
-            <a href="#">Hospital Awards & Rating</a>
-            <a href="#">Quality & Quantity</a>
-            <a href="#">FAQ</a>
+         <div class="footer__links">
+            <p class="footer__link-header">For Patients</p>
+            <div class="footer__link">
+               <a href="#">Account Sign Up/Log in</a>
+               <a href="#">Hospital Awards & Rating</a>
+               <a href="#">Quality & Quantity</a>
+               <a href="#">FAQ</a>
+            </div>
          </div>
       </div>
    </footer>

@@ -1,4 +1,7 @@
 .header {
+   &-container {
+      background-color: hsl(219, 83%, 93%);
+   }
    @include flex-v-center;
    justify-content: space-between;
    padding: 2rem 0rem;

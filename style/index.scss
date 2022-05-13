@@ -15,15 +15,13 @@
 @import "./pages/hero", "./pages/_popular", "./pages/_findright",
    "./pages/_whyyou", "./pages/_meet", "./pages/_feedback", "./pages/subsribe";
 
-.hero {
-   position: relative;
-}
-.search-doctor {
-   position: absolute;
-   bottom: 0;
-   right: 0;
-   left: 0;
-}
+// .search-doctor {
+//    background-color: white;
+// }
 
 // TODO add loading page befor loadDom
 // TODO add go to top btn
+
+.header {
+   background-color: hsl(219, 83%, 93%);
+}

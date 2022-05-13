@@ -97,7 +97,6 @@ body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-color: #dee9fc;
 }
 
 /*
@@ -550,6 +549,10 @@ template {
   font-weight: bold;
 }
 
+.header-container {
+  background-color: #dee9fc;
+}
+
 .header__left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -603,6 +606,12 @@ template {
   height: 2.1rem;
 }
 
+.search-doctor-container {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #dee9fc), color-stop(0%, white));
+  background: linear-gradient(to bottom, #dee9fc 50%, white 0%);
+  padding: 3rem;
+}
+
 .search-doctor {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -612,13 +621,12 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 2rem;
+  margin-top: -3rem;
   padding: 3rem 5rem;
   border-radius: 7px;
   background-color: var(--white-color);
-  margin-left: auto;
-  margin-right: auto;
-  -webkit-box-shadow: 1.3px 2.6px 2.6px rgba(0, 0, 0, 0.02), 3.2px 6.3px 6.2px rgba(0, 0, 0, 0.028), 6px 11.8px 11.6px rgba(0, 0, 0, 0.035), 10.7px 21px 20.8px rgba(0, 0, 0, 0.042), 20.1px 39.3px 38.9px rgba(0, 0, 0, 0.05), 48px 94px 93px rgba(0, 0, 0, 0.07);
-          box-shadow: 1.3px 2.6px 2.6px rgba(0, 0, 0, 0.02), 3.2px 6.3px 6.2px rgba(0, 0, 0, 0.028), 6px 11.8px 11.6px rgba(0, 0, 0, 0.035), 10.7px 21px 20.8px rgba(0, 0, 0, 0.042), 20.1px 39.3px 38.9px rgba(0, 0, 0, 0.05), 48px 94px 93px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 1.3px 12.6px 32.6px rgba(0, 0, 0, 0.12);
+          box-shadow: 1.3px 12.6px 32.6px rgba(0, 0, 0, 0.12);
 }
 
 .search-doctor__youmaylook {
@@ -821,6 +829,10 @@ template {
   padding: 5rem 0rem;
 }
 
+.footer-container {
+  background-color: var(--header-gradient-color-1);
+}
+
 .footer_logos-con {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -967,6 +979,10 @@ template {
           justify-content: center;
 }
 
+.hero-container {
+  background-color: var(--header-gradient-color-1);
+}
+
 .hero__left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1034,12 +1050,9 @@ template {
 }
 
 .popular {
-  margin-top: 10rem;
-  padding-top: 20rem;
-  padding-bottom: 2rem;
+  margin-top: 5rem;
+  padding-bottom: 6rem;
   background-color: white;
-  -webkit-box-shadow: 0px -5px 100px #95adda;
-          box-shadow: 0px -5px 100px #95adda;
 }
 
 .popular-container {
@@ -1476,6 +1489,7 @@ template {
 
 .feedback {
   padding-top: 5rem;
+  background-color: var(--header-gradient-color-1);
 }
 
 .feedback-container {
@@ -1650,14 +1664,7 @@ template {
           box-shadow: inset 0px 0px 0px transparent, 0px 0px 20px rgba(0, 0, 0, 0.661);
 }
 
-.hero {
-  position: relative;
-}
-
-.search-doctor {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
+.header {
+  background-color: #dee9fc;
 }
 /*# sourceMappingURL=index.css.map */
