@@ -75,8 +75,10 @@
       }
    }
    &__right {
+      position: relative;
       @include flex-hv-center;
       img {
+         position: absolute;
          width: 60rem;
          max-width: 60rem;
       }

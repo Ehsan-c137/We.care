@@ -5,7 +5,8 @@
 @import "./base/_reset", "./base/_typography", "./base/animation";
 
 // layout
-@import "./layout/_header", "./layout/_searchDoctor", "./layout/footer";
+@import "./layout/_header", "./layout/_searchDoctor", "./layout/_findDoctor",
+   "./layout/footer";
 
 // components
 @import "./components/buttons";
@@ -25,3 +26,4 @@
 }
 
 // TODO add loading page befor loadDom
+// TODO add go to top btn
