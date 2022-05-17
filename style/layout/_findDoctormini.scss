@@ -10,7 +10,9 @@
    background-color: var(--white-color);
    padding: 2rem 1rem;
    border-radius: 7px;
-
+   transition: 0.9s;
+   opacity: 0;
+   transform: translateX(2rem);
    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
    &__header {
       font-weight: 600;

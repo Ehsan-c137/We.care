@@ -32,4 +32,8 @@
    background-color: var(--primery-blue);
 }
 
-// hero ----------
+// observer ----------
+.active-animation {
+   transform: translateX(0rem) !important;
+   opacity: 1 !important;
+}
