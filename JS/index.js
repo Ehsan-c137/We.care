@@ -2,7 +2,7 @@
 
 // loader for first time open the site
 const loaderPage = document.querySelector(".loader");
-window.addEventListener("load", function () {
+window.addEventListener("DOMContentLoaded", function () {
    loaderPage.classList.add("loaderHidden");
 });
 
