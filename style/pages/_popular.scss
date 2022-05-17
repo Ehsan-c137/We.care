@@ -38,16 +38,17 @@
          background-color: var(--header-gradient-color-1);
          border: 1px solid var(--input-placeholder-color);
          transition: 0.3s;
+         box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 2px 0px;
       }
       @include flex-hv-center;
       flex-direction: column;
 
       gap: 1rem;
-      border: 1px solid transparent;
+      border: 1px solid var(--shade-of-white-1);
       border-radius: 9px;
       color: var(--primery-blue-dark);
       font-weight: 600;
-      box-shadow: rgba(100, 100, 111, 0.2) 0px 4px 15px 0px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 4px 5px 0px;
 
       img {
          width: 6rem;
