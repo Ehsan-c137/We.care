@@ -1,5 +1,11 @@
 "use strict";
 
+// loader for first time open the site
+const loaderPage = document.querySelector(".loader");
+window.addEventListener("load", function () {
+   loaderPage.classList.add("loaderHidden");
+});
+
 const searchDocCloseBtn = document.querySelectorAll(
    ".search-doctor__segested-items-close-btn"
 );

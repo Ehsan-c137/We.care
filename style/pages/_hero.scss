@@ -3,7 +3,7 @@
       background-color: var(--header-gradient-color-1);
    }
    display: grid;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
    align-items: center;
    justify-content: center;
 
@@ -25,6 +25,7 @@
 
       &__btns {
          display: flex;
+         flex-wrap: wrap;
          gap: 2rem;
       }
       &__btn {
