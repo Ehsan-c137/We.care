@@ -1,9 +1,11 @@
 "use strict";
 
 // loader for first time open the site
-const loaderPage = document.querySelector(".loader");
+const loaderPage = document.querySelector(".pre-loader");
 window.addEventListener("load", function () {
-   loaderPage.classList.add("loaderHidden");
+   setTimeout(() => {
+      loaderPage.classList.add("pre-loader-hidden");
+   }, 1000);
 });
 
 // header

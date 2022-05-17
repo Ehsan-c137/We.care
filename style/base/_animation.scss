@@ -1,28 +1,30 @@
 // loader animation
-.loader {
+.pre-loader {
    position: fixed;
    z-index: 101;
    height: 100vh;
    width: 100vw;
+
    background-color: var(--header-gradient-color-1);
    background-image: url("../../assets/imgs/heartbeat.gif");
    background-position: center;
    background-repeat: no-repeat;
+
    display: flex;
    justify-content: center;
    align-items: center;
-   transform: translateX(100%);
    font-size: 3rem;
 }
-.loaderHidden {
+.pre-loader-hidden {
    animation: loaderAnimate 1s ease-in-out;
+   transform: translateX(100%);
 }
 @keyframes loaderAnimate {
    0% {
       transform: translateX(0%);
    }
    50% {
-      transform: translateX(-25%);
+      transform: translateX(-10%);
    }
    75% {
       transform: translateX(0%);
