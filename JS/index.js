@@ -10,17 +10,22 @@ window.addEventListener("load", function () {
 
 // header & go to top
 const header = document.querySelector(".header-container");
-const goToTop = document.querySelector("#go-to-top");
+const goToTopBtn = document.querySelector("#go-to-top");
 window.addEventListener("scroll", function (e) {
    if (this.pageYOffset > 100) {
       header.classList.add("header-scroll");
-      goToTop.style.opacity = 1;
+      goToTopBtn.style.opacity = 1;
    } else {
       header.classList.remove("header-scroll");
-      goToTop.style.opacity = 0;
+      goToTopBtn.style.opacity = 0;
    }
 });
-
+goToTopBtn.addEventListener("click", function () {
+   window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+   });
+});
 const searchDocCloseBtn = document.querySelectorAll(
    ".search-doctor__segested-items-close-btn"
 );
