@@ -8,12 +8,17 @@ window.addEventListener("load", function () {
    }, 1000);
 });
 
-// header
+// header & go to top
 const header = document.querySelector(".header-container");
+const goToTop = document.querySelector("#go-to-top");
 window.addEventListener("scroll", function (e) {
-   this.pageYOffset > 100
-      ? header.classList.add("header-scroll")
-      : header.classList.remove("header-scroll");
+   if (this.pageYOffset > 100) {
+      header.classList.add("header-scroll");
+      goToTop.style.opacity = 1;
+   } else {
+      header.classList.remove("header-scroll");
+      goToTop.style.opacity = 0;
+   }
 });
 
 const searchDocCloseBtn = document.querySelectorAll(

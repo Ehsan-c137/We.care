@@ -1714,4 +1714,27 @@ template {
   -webkit-box-shadow: inset 0px 0px 0px transparent, 0px 0px 20px rgba(0, 0, 0, 0.661);
           box-shadow: inset 0px 0px 0px transparent, 0px 0px 20px rgba(0, 0, 0, 0.661);
 }
+
+#go-to-top {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 4rem;
+  height: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  border-radius: 50%;
+  background-color: var(--header-gradient-color-2);
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 /*# sourceMappingURL=index.css.map */

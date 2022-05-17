@@ -15,9 +15,23 @@
 @import "./pages/hero", "./pages/_popular", "./pages/_findright",
    "./pages/_whyyou", "./pages/_meet", "./pages/_feedback", "./pages/subsribe";
 
-// .search-doctor {
-//    background-color: white;
-// }
+#go-to-top {
+   position: fixed;
+   right: 10px;
+   bottom: 10px;
+
+   width: 4rem;
+   height: 4rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   opacity: 0;
+   border-radius: 50%;
+   background-color: var(--header-gradient-color-2);
+   cursor: pointer;
+   transition: 0.5s;
+}
 
 // TODO add loading page befor loadDom
 // TODO add go to top btn
