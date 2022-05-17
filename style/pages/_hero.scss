@@ -1,6 +1,7 @@
 .hero {
    &-container {
       background-color: var(--header-gradient-color-1);
+      padding-top: 3rem;
    }
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));

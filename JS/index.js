@@ -2,8 +2,16 @@
 
 // loader for first time open the site
 const loaderPage = document.querySelector(".loader");
-window.addEventListener("DOMContentLoaded", function () {
+window.addEventListener("load", function () {
    loaderPage.classList.add("loaderHidden");
+});
+
+// header
+const header = document.querySelector(".header-container");
+window.addEventListener("scroll", function (e) {
+   this.pageYOffset > 100
+      ? header.classList.add("header-scroll")
+      : header.classList.remove("header-scroll");
 });
 
 const searchDocCloseBtn = document.querySelectorAll(

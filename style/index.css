@@ -582,13 +582,24 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2rem 0rem;
   color: var(--primery-blue-dark);
   font-weight: bold;
 }
 
 .header-container {
-  background-color: #dee9fc;
+  background-color: var(--header-gradient-color-1);
+  position: fixed;
+  z-index: 101;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 2rem 0rem;
 }
 
 .header__left {
@@ -627,6 +638,12 @@ template {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 2rem;
+}
+
+.header-scroll {
+  padding: 1rem 0rem !important;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .search-doctor-container {
@@ -1009,6 +1026,7 @@ template {
 
 .hero-container {
   background-color: var(--header-gradient-color-1);
+  padding-top: 3rem;
 }
 
 .hero__left {
@@ -1694,9 +1712,5 @@ template {
 .subscribe__input-container:focus-within {
   -webkit-box-shadow: inset 0px 0px 0px transparent, 0px 0px 20px rgba(0, 0, 0, 0.661);
           box-shadow: inset 0px 0px 0px transparent, 0px 0px 20px rgba(0, 0, 0, 0.661);
-}
-
-.header {
-  background-color: #dee9fc;
 }
 /*# sourceMappingURL=index.css.map */
