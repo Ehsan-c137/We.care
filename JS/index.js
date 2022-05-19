@@ -20,6 +20,14 @@ window.addEventListener("scroll", function (e) {
       goToTopBtn.style.opacity = 0;
    }
 });
+
+const hamBtn = document.querySelector("#hamburger");
+const hamMenu = document.querySelector(".hamburger-menu");
+hamBtn.addEventListener("click", function () {
+   hamMenu.classList.toggle("hamburger-menu-active");
+});
+
+// -----------
 goToTopBtn.addEventListener("click", function () {
    window.scrollTo({
       top: 0,
