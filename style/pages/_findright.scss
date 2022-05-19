@@ -4,7 +4,8 @@
 
    &-container {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+
       gap: 5rem;
       align-items: center;
       justify-content: center;
@@ -79,8 +80,8 @@
       @include flex-hv-center;
       img {
          position: absolute;
-         width: 60rem;
-         max-width: 60rem;
+         width: 55rem;
+         max-width: 70rem;
       }
    }
 }

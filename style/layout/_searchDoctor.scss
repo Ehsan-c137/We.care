@@ -24,6 +24,7 @@
 
    &__sugestion-items-container {
       display: flex;
+      flex-wrap: wrap;
       gap: 2rem;
    }
    &__segested-items {
@@ -102,4 +103,22 @@
 }
 .search-doctor__segested-items-close-btn:hover::after {
    opacity: 1;
+}
+
+// 784 px
+@media only screen and (max-width: 49em) {
+   .inputs-container {
+      flex-wrap: wrap;
+   }
+   .search-doctor-btn {
+      width: 100%;
+   }
+}
+
+// 500px
+@media only screen and (max-width: 31.25em) {
+   .search-doctor__sugestion-items-container {
+      gap: 1rem;
+      font-size: 1.4rem;
+   }
 }

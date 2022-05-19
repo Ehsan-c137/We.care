@@ -777,6 +777,8 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 2rem;
 }
 
@@ -900,6 +902,23 @@ template {
 
 .search-doctor__segested-items-close-btn:hover::after {
   opacity: 1;
+}
+
+@media only screen and (max-width: 49em) {
+  .inputs-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .search-doctor-btn {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .search-doctor__sugestion-items-container {
+    gap: 1rem;
+    font-size: 1.4rem;
+  }
 }
 
 .find-doctor-form {
@@ -1111,8 +1130,8 @@ template {
 .hero {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(40rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1192,6 +1211,53 @@ template {
 
 .hero__right img {
   width: 100%;
+}
+
+@media only screen and (max-width: 78em) {
+  .hero__left_header {
+    font-size: 5.2rem;
+  }
+}
+
+@media only screen and (max-width: 64em) {
+  .hero-container {
+    padding-top: 11rem;
+  }
+  .hero__left {
+    justify-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .hero__left__btns {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 62em) {
+  .hero__right {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (max-width: 32em) {
+  .hero__left_header {
+    font-size: 4rem;
+  }
 }
 
 .popular {
@@ -1298,8 +1364,8 @@ template {
 .find-right-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(50rem, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
+  -ms-grid-columns: (minmax(50rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
   gap: 5rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1437,8 +1503,8 @@ template {
 
 .find-right__right img {
   position: absolute;
-  width: 60rem;
-  max-width: 60rem;
+  width: 55rem;
+  max-width: 70rem;
 }
 
 .why-you {
@@ -1811,8 +1877,103 @@ template {
           box-shadow: inset 0px 0px 0px transparent, 0px 0px 20px rgba(0, 0, 0, 0.661);
 }
 
+@media only screen and (max-width: 31.25em) {
+  .popular__card {
+    gap: 1rem;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .popular__items-container {
+    gap: 1rem;
+  }
+  .popular__header {
+    text-align: center;
+  }
+  .find-right-container {
+    gap: 25rem;
+    padding-bottom: 17rem;
+    -ms-grid-columns: (minmax(9rem, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+  }
+  .find-right__header {
+    font-size: 3rem;
+  }
+  .find-right__right img {
+    width: 36rem;
+    opacity: 0.6;
+  }
+  .find-doctor-form {
+    left: 50%;
+  }
+  .find-right-guide--wrapper-text {
+    width: 25rem;
+  }
+  .find-right-container {
+    -ms-grid-columns: (minmax(30rem, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  }
+  .why-you {
+    padding-bottom: 3rem;
+  }
+  .why-you__left img {
+    width: 30rem;
+  }
+  .why-you > .container {
+    -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+  .why-you__right__header {
+    text-align: center;
+  }
+  .why-you-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .meet__header-sub {
+    text-align: center;
+    width: 80%;
+  }
+  .meet__doctors-container {
+    width: 90%;
+  }
+  .feedback__header {
+    text-align: center;
+  }
+  .feedback__header-sub {
+    width: 90%;
+  }
+  .feedback__main-left {
+    padding: 2rem;
+  }
+  .feedback__main-right {
+    padding: 2rem;
+  }
+  .subscribe {
+    padding: 5rem 2rem;
+  }
+  .subscribe-container {
+    padding: 2rem;
+  }
+  .subscribe__header {
+    width: 100%;
+  }
+  .footer {
+    justify-items: center;
+    width: 100%;
+    gap: 4rem;
+  }
+}
+
 #go-to-top {
   position: fixed;
+  z-index: 102;
   right: 10px;
   bottom: 10px;
   width: 4rem;

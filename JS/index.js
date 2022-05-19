@@ -3,9 +3,9 @@
 // loader for first time open the site
 const loaderPage = document.querySelector(".pre-loader");
 // window.addEventListener("load", function () {
-setTimeout(() => {
-   loaderPage.classList.add("pre-loader-hidden");
-}, 1000);
+// setTimeout(() => {
+//    loaderPage.classList.add("pre-loader-hidden");
+// }, 1000);
 // });
 
 // header & go to top

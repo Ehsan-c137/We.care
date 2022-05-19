@@ -15,8 +15,10 @@
 @import "./pages/hero", "./pages/_popular", "./pages/_findright",
    "./pages/_whyyou", "./pages/_meet", "./pages/_feedback", "./pages/subsribe";
 
+@import "./utils/responsive";
 #go-to-top {
    position: fixed;
+   z-index: 102;
    right: 10px;
    bottom: 10px;
 
