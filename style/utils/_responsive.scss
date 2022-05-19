@@ -30,18 +30,14 @@
    }
 
    .find-right__right img {
-      width: 36rem;
-      opacity: 0.6;
+      width: 31rem;
+      opacity: 0.8;
    }
    .find-doctor-form {
       left: 50%;
    }
    .find-right-guide--wrapper-text {
-      width: 25rem;
-   }
-
-   .find-right-container {
-      grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+      width: 100%;
    }
 
    .why-you {
@@ -62,6 +58,7 @@
    }
 
    // ------
+
    .meet__header-sub {
       text-align: center;
       width: 80%;

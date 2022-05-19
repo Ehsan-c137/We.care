@@ -1737,8 +1737,8 @@ template {
 .feedback__main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(36rem, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(36rem, 1fr));
+  -ms-grid-columns: (minmax(31rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(31rem, 1fr));
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1905,18 +1905,14 @@ template {
     font-size: 3rem;
   }
   .find-right__right img {
-    width: 36rem;
-    opacity: 0.6;
+    width: 31rem;
+    opacity: 0.8;
   }
   .find-doctor-form {
     left: 50%;
   }
   .find-right-guide--wrapper-text {
-    width: 25rem;
-  }
-  .find-right-container {
-    -ms-grid-columns: (minmax(30rem, 1fr))[auto-fill];
-        grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+    width: 100%;
   }
   .why-you {
     padding-bottom: 3rem;
