@@ -1052,6 +1052,7 @@ template {
 #hamburger {
   background-color: transparent;
   border: none;
+  display: none;
   cursor: pointer;
   padding: 0;
   z-index: 104;
@@ -1927,6 +1928,11 @@ template {
 }
 
 @media only screen and (max-width: 31.25em) {
+  #hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .search-doctor-container {
     padding: 3rem 1rem;
   }

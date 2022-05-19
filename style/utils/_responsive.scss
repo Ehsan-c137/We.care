@@ -1,6 +1,9 @@
 // 500px
 @media only screen and (max-width: 31.25em) {
    //
+   #hamburger {
+      display: flex;
+   }
    .search-doctor-container {
       padding: 3rem 1rem;
    }
