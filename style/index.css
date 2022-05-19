@@ -1878,6 +1878,12 @@ template {
 }
 
 @media only screen and (max-width: 31.25em) {
+  .search-doctor-container {
+    padding: 3rem 1rem;
+  }
+  .search-doctor {
+    padding: 3rem 2rem;
+  }
   .popular__card {
     gap: 1rem;
     font-size: 1.6rem;
