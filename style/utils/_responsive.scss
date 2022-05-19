@@ -73,16 +73,23 @@
       padding: 2rem;
    }
    .feedback__main-right {
-      padding: 2rem;
+      padding: 5rem;
    }
    // -------
    .subscribe {
-      padding: 5rem 2rem;
+      padding: 5rem;
    }
    .subscribe-container {
+      width: 100%;
       padding: 2rem;
    }
    .subscribe__header {
+      width: 100%;
+      font-size: 3rem;
+   }
+   .subscribe__input-container {
+      display: flex;
+      flex-direction: column;
       width: 100%;
    }
    // footer

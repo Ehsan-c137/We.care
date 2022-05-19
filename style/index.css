@@ -1737,8 +1737,8 @@ template {
 .feedback__main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(40rem, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
+  -ms-grid-columns: (minmax(36rem, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(36rem, 1fr));
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1953,15 +1953,27 @@ template {
     padding: 2rem;
   }
   .feedback__main-right {
-    padding: 2rem;
+    padding: 5rem;
   }
   .subscribe {
-    padding: 5rem 2rem;
+    padding: 5rem;
   }
   .subscribe-container {
+    width: 100%;
     padding: 2rem;
   }
   .subscribe__header {
+    width: 100%;
+    font-size: 3rem;
+  }
+  .subscribe__input-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
   }
   .footer {
