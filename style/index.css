@@ -1180,8 +1180,8 @@ template {
 .hero {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1964,7 +1964,8 @@ template {
     opacity: 0.8;
   }
   .find-doctor-form {
-    left: 50%;
+    left: 21%;
+    top: 0%;
   }
   .find-right-guide--wrapper-text {
     width: 100%;
